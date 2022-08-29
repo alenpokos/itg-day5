@@ -1,0 +1,12 @@
+table(border='1')
+    tr
+        td Poruka
+    each row in rows
+        tr
+          td #{row.message}
+
+
+form(action="/",method="POST")
+    label(for="message") Message
+    input#name(type="text", name="message")
+    button(type="submit") Submit
